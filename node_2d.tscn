@@ -1,15 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://dech3g8cgh0i0"]
 
-[ext_resource type="Script" path="res://Test.cs" id="1_arr1o"]
-[ext_resource type="Script" path="res://AreaTrigger.cs" id="3_1yefd"]
+[ext_resource type="Script" path="res://Scripts/Test.cs" id="1_2jdjk"]
+[ext_resource type="Script" path="res://Scripts/AreaTrigger.cs" id="3_tpll7"]
+[ext_resource type="Script" path="res://Scripts/GlobalReferences.cs" id="4_03s70"]
 [ext_resource type="Texture2D" uid="uid://cb3v0c10s7h7" path="res://Sprites/88873.png" id="4_62kji"]
-[ext_resource type="Script" path="res://GlobalReferences.cs" id="5_rfd73"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pi3ts"]
 size = Vector2(224, 911)
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_arr1o")
+script = ExtResource("1_2jdjk")
 tes = 15
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -17,15 +17,14 @@ show_behind_parent = true
 texture = ExtResource("4_62kji")
 
 [node name="Trigger Box" type="Area2D" parent="."]
-script = ExtResource("3_1yefd")
+script = ExtResource("3_tpll7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Trigger Box"]
 position = Vector2(1171, 456.5)
 shape = SubResource("RectangleShape2D_pi3ts")
 
-[node name="Node" type="Node" parent="." node_paths=PackedStringArray("player")]
-script = ExtResource("5_rfd73")
-player = NodePath("")
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_03s70")
 
 [connection signal="body_entered" from="Trigger Box" to="Trigger Box" method="OnTriggerEnter"]
 [connection signal="body_exited" from="Trigger Box" to="Trigger Box" method="OnTriggerExit"]

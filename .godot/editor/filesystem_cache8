@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1689938642
+cgarrr.cs::CSharpScript::-1::1689932890::0::1::::<><>::
+Char.cs::CSharpScript::-1::1689937835::0::1::::<><>::
+Chartest.cs::CSharpScript::-1::1689931919::0::1::::<><>::
+icon.svg::CompressedTexture2D::3573070148228409557::1689923790::1689923806::1::::<><>::
+node_2d.tscn::PackedScene::7444621568536094373::1689938642::0::1::::<><>::res://Test.cs<>res://Char.cs<>uid://bq527cp3djvnp::::res://icon.svg<>uid://cb3v0c10s7h7::::res://Sprites/88873.png<>res://GlobalReferences.cs
+GlobalReferences.cs::CSharpScript::-1::1689938639::0::1::::<><>::
+Test.cs::CSharpScript::-1::1689931399::0::1::::<><>::
+Triggertest.cs::CSharpScript::-1::1689938640::0::1::::<><>::
+Triggg.cs::CSharpScript::-1::1689935699::0::1::::<><>::
+trss.cs::CSharpScript::-1::1689930968::0::1::::<><>::
+::res://Scripts/::1689937991
+::res://Sprites/::1689935482
+88873.png::CompressedTexture2D::144180959888424942::1689935480::1689935482::1::::<><>::
